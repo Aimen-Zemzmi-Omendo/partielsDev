@@ -1,0 +1,8 @@
+{% block body %}
+    <h1>Utilisateurs du site</h1>
+    <ul>
+        {% for user in userList %}
+            <li>{{ user.firstName }} {{ user.lastName|upper }} : {{ user.email }} - {{ user.roles }} <a href="{{ path("user_profile", {id: user.id })}}">Modifier</a> <a href="{{ path("delete_user", {id: user.id })}}">Supprimer</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

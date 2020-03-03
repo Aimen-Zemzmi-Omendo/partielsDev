@@ -1,0 +1,8 @@
+{% block body %}
+    <h1>Article du site</h1>
+    <ul>
+        {% for article in articleList %}
+            <li>{{ article.Title }} {{ article.Autor }} : {{ article.Content }} <a href="{{ path("article", {id: article.id })}}">Modifier</a> <a href="{{ path("delete_article", {id: article.id })}}">Supprimer</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
