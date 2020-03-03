@@ -3,5 +3,12 @@
     Create Article
 {% endblock %}
 {% block body %}
+    <style>
+        .header{
+            top: 0px;
+            text-align: center;
+        }
+    </style>
+    <div class="header"><a href="/">Accueil</a></div>
     {{ form(form) }}
 {% endblock %}

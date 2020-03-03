@@ -1,4 +1,11 @@
 {% block body %}
+    <style>
+        .header{
+            top: 0px;
+            text-align: center;
+        }
+    </style>
+    <div class="header"><a href="/">Accueil</a></div>
     <h1>Utilisateurs du site</h1>
     <ul>
         {% for user in userList %}

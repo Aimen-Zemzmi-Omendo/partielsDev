@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<style>
+    .header{
+        top: 0px;
+        text-align: center;
+    }
+</style>
+    <div class="header"><a href="/">Accueil</a></div>
+    <ul class="Article">
+        <H1>ARTICLE</H1>
+        <li><a href="article-create">Create Article</a></li>
+        <li><a href="article-list">Article List</a></li>
+    </ul>
+    <ul class="User">
+        <H1>USER</H1>
+        <li><a href="user-create">Create User</a></li>
+        <li><a href="user-list">User List</a></li>
+    </ul>
+{% endblock %}
